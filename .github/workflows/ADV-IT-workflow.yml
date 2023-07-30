@@ -34,4 +34,6 @@ jobs:
       run: echo "Hello World from Deploy job"
 
     - name: Deployment
-      run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
+      run: |
+        echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
+        pwd
