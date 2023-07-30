@@ -15,7 +15,7 @@ jobs:
       var1: "This is job variable 1"
       var2: "This is job variable 2"
 
-    runs-on: ubuntu-latest1
+    runs-on: ubuntu-latest
 
     steps:
 
