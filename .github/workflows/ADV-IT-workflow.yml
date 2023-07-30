@@ -1,4 +1,7 @@
 name: My-GitHub-Action-Basics
+env:
+  APPLICATION_NAME      : "MyApplication"
+  DEPLOY_PACKAGE_NAME   : "MyPackage-${{ github.sha }}"
 
 on:
   push:
@@ -13,6 +16,12 @@ jobs:
     steps:
     - name: Print Hello Message in Testing
       run: echo "Hello World from Testing job"
+
+    - name: Execute few commands
+      run: |
+        echo "Hello Message 1"
+        echo "Hello Message 2"
+        echo "Application name: ${{ env.APPLICATION_NAME }}"
         
   
   my_deploy:
@@ -23,3 +32,6 @@ jobs:
     steps:
     - name: Print Hello Message in Deploy
       run: echo "Hello World from Deploy job"
+
+    - name: Deployment
+      run: echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME }}"
