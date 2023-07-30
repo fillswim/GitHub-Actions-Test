@@ -3,7 +3,7 @@ name: My-GitHub-Action-Basics
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   my_testing:
@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print Hello
-      run: echo "Hello World"
+      run: echo "Hello World2"
