@@ -31,6 +31,9 @@ jobs:
 
     - name: List current folder
       run: ls -la
+
+    - name:
+      run: java -version
         
   
   my_deploy:
