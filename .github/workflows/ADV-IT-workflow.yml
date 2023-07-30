@@ -25,6 +25,12 @@ jobs:
 
     - name: List current folder
       run: ls -la
+    
+    - name: Git clone my repository
+      uses: actions/checkout@v1
+
+    - name: List current folder
+      run: ls -la
         
   
   my_deploy:
