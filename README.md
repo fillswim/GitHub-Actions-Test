@@ -1,3 +1,5 @@
+![GitHub Actions](images/GitHub%20Actions.png)
+
 # GitHub-Actions-Test
 
 Status of Last Deployment:<br>
